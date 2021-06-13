@@ -1,15 +1,15 @@
 // TODO: Include packages needed for this application
 const fs = require("fs");
 const inquirer = require('inquirer');
-const generatePage = require('./utils/generateMarkdown');
+const generateMarkdown = require("./utils/generateMarkdown");
+
 
 // TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
-        {
+const questions = [
+    {
         type: 'input',
-        name: 'project',
-        message: 'What is the name of your project? (Required)',
+        name: 'title',
+        message: 'What is the title of your project?',
     },
     {
         type: 'input',
@@ -29,26 +29,44 @@ const questions = () => {
     {
         type: 'input',
         name: 'contribute',
-        message: 'List GitHub usernames of anyone who contributed to this project',
+        message: 'List GitHub usernames of anyone who contributed to this project, press ENTER if none',
     },
     {
         type: 'input',
-        name: 'questions',
+        name: 'username',
         message: 'What is your GitHub username?'
     },
-    ])
+    {
+        type: 'input',
+        name: 'email',
+        message: 'What is your Github email?'
+
+    },
+    {
+        type: "list",
+        message: "What license does your project use?",
+        name: "license",
+        choices: ["MIT", "AGPLv3", "Mozilla", "Apache"],
+    }
+]
+
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) throw err;
+
+        console.log('Your ReadMe is complete!')
+    })
 }
 
+// TODO: Create a function to initialize app
+function init() {
+    inquirer.prompt(questions)
+        .then(function (data) {
+            writeToFile("ReadMeGnrt.md", generateMarkdown(data));
+        })
+}
 
-    // TODO: Create a function to write README file
-    function writeToFile(fileName, data) { }
-
-    // TODO: Create a function to initialize app
-    function init() {
-        // use inquirer to ask questions (activity 2)
-        // call generateMarkdown function which will return a string
-        // call writeToFile function pass to it a file name and the string returned by the generateMarkdown function
-    }
-
-    // Function call to initialize app
-    init();
+// Function call to initialize app
+init();
