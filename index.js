@@ -41,9 +41,10 @@ const questions = [
         choices: ["mit", "agpl-3.0", "mpl-2.0", "apache-2.0",],
     },
     {
-        type: 'input',
+        type: 'confirm',
         name: 'contribute',
-        message: 'List GitHub usernames of anyone who contributed to this project?',
+        message: 'Would you like other developes to contribute to your project? ',
+        default: false,
     },
     {
         type: 'input',
