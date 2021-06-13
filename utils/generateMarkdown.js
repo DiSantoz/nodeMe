@@ -66,7 +66,8 @@ function generateMarkdown(data) {
 
   ## Questions
   
-  Hi my name is ${data.username} the developer behind ${data.title} !
+  Hi my name is [${data.username}](https://github.com/${data.username}) the developer behind ${data.title} !
+
   
   If you have any questions about the usage of this project or any suggestions on how to better this project please feel free to contact me at:
 
