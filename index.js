@@ -27,6 +27,12 @@ const questions = [
         message: 'How is your project used?',
     },
     {
+        type: "list",
+        message: "What license does your project use?",
+        name: "license",
+        choices: ["mit", "agpl", "mpl", "apache"],
+    },
+    {
         type: 'input',
         name: 'contribute',
         message: 'List GitHub usernames of anyone who contributed to this project, press ENTER if none',
@@ -42,12 +48,6 @@ const questions = [
         message: 'What is your Github email?'
 
     },
-    {
-        type: "list",
-        message: "What license does your project use?",
-        name: "license",
-        choices: ["MIT", "AGPLv3", "Mozilla", "Apache"],
-    }
 ]
 
 
