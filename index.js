@@ -43,7 +43,7 @@ const questions = [
     {
         type: 'confirm',
         name: 'contribute',
-        message: 'Would you like other developes to contribute to your project? ',
+        message: 'Would you like other developers to contribute to your project? ',
         default: false,
     },
     {
@@ -59,7 +59,7 @@ const questions = [
     {
         type: 'input',
         name: 'email',
-        message: 'What is your Github email?'
+        message: 'What is youremail address?'
 
     },
 ]

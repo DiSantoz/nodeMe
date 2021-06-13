@@ -56,7 +56,7 @@ function generateMarkdown(data) {
   ${data.usage}
 
   ## License
-
+  Read more about the license here:
   ${renderLicenseSection(data.license)}
   
   ${renderContribute(data.contribute)}
@@ -76,7 +76,6 @@ function generateMarkdown(data) {
 }
 
 function renderContributeTob(contribute) {
-  console.log(contribute);
   if (contribute === false) {
     return '';
   }
@@ -84,7 +83,6 @@ function renderContributeTob(contribute) {
 };
 
 function renderContribute(contribute) {
-  console.log(contribute);
   if (contribute === false) {
     return '';
   }
