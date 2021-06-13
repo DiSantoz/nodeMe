@@ -1,91 +1,35 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  if (!license) {
-    license = '';
-  }
-  return `![badmath](https://img.shields.io/static/v1?label=license&message=${license}&color=green)`
-  
-}
+# nodeMe
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {
-  if (!license) {
-    license = '';
-  }
-  return `https://choosealicense.com/licenses/${license}`
-}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {
-  if (!license) {
-    license = '';
-  }
-  return `
-  ${renderLicenseLink(license)}
-  `
-}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title}
-
-  ${renderLicenseBadge(data.license)}
+  ![badmath](https://img.shields.io/static/v1?label=license&message=mit&color=green)
   
   ## Description
 
-  ${data.description}
+  sdsd
 
   ## Table of Contents
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
-  ${renderContributeTob(data.contribute)}
+  * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions](#questions)
   
 
   ## Installation
 
-  ${data.install}
+  sddsdds
 
   ## Usage
 
-  ${data.usage}
+  dsddssd
 
   ## License
   Read more about the license here:
-  ${renderLicenseSection(data.license)}
   
-  ${renderContribute(data.contribute)}
-  ## Tests
-
-  ${data.test}
-
-  ## Questions
+  https://choosealicense.com/licenses/mit
   
-  Hi my name is ${data.username} the developer behind ${data.title} !
   
-  If you have any questions about the usage of this project or any suggestions on how to better this project please feel free to contact me at:
-
-  ${data.email}
-`;
-}
-
-function renderContributeTob(contribute) {
-  if (contribute === false) {
-    return '';
-  }
-  return `* [Contributing](#contributing)`
-};
-
-function renderContribute(contribute) {
-  if (contribute === false) {
-    return '';
-  }
-  return `
+  
   ## Contributing
   
   ![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)
@@ -211,8 +155,15 @@ function renderContribute(contribute) {
   Community Impact Guidelines were inspired by 
   [Mozilla's code of conduct enforcement ladder][Mozilla CoC].
   
-  `
-};
+  
+  ## Tests
 
+  ffdfd
 
-module.exports = generateMarkdown;
+  ## Questions
+  
+  Hi my name is sdss the developer behind nodeMe !
+  
+  If you have any questions about the usage of this project of any suggestions on how to better this project please feel free to contact me at:
+
+  dddd
