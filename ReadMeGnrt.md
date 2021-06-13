@@ -1,10 +1,10 @@
-# dswddswrwrrwrrwrw
+# a
 
-  ![badmath](https://img.shields.io/static/v1?label=license&message=mpl-2.0&color=green)
+  ![badmath](https://img.shields.io/static/v1?label=license&message=mit&color=green)
   
   ## Description
 
-  rwrwwrrwwrrwrwwr
+  c
 
   ## Table of Contents
   * [Installation](#installation)
@@ -17,16 +17,16 @@
 
   ## Installation
 
-  rwrwrwrwrwrwrwrwrwrwwrrwrw
+  b
 
   ## Usage
 
-  ffdfvffvfvffv
+  s
 
   ## License
 
   
-  https://choosealicense.com/licenses/mpl-2.0
+  https://choosealicense.com/licenses/mit
   
   
   
@@ -93,8 +93,8 @@
   ### Enforcement
   
   Instances of abusive, harassing, or otherwise unacceptable behavior may be
-  reported to the community leaders responsible for enforcement at
-  [place].
+  reported to the community leaders responsible for enforcement.
+
   All complaints will be reviewed and investigated promptly and fairly.
   
   All community leaders are obligated to respect the privacy and security of the
@@ -148,9 +148,9 @@
   
   ## Attribution
   
-  This Code of Conduct is adapted from the [Contributor Covenant][homepage],
+  This Code of Conduct is adapted from the Contributor Covenant homepage,
   version 2.0, available at
-  [https://www.contributor-covenant.org/version/2/0/code_of_conduct.html][v2.0].
+  https://www.contributor-covenant.org/version/2/0/code_of_conduct.html[v2.0].
   
   Community Impact Guidelines were inspired by 
   [Mozilla's code of conduct enforcement ladder][Mozilla CoC].
@@ -159,12 +159,12 @@
 
   ## Tests
 
-  dsdsdssddsdsdssd
+  f
 
   ## Questions
   
-  Hi my name is dsdsdsdsdsdsdsdsdsds the developer behind dswddswrwrrwrrwrw !
+  Hi my name is s the developer behind a !
   
   If you have any questions about the usage of this project of any suggestions on how to better this project please feel free to contact me at:
 
-  ddvvdvvvvv
+  p
