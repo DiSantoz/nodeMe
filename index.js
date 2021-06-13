@@ -10,32 +10,45 @@ const questions = [
         type: 'input',
         name: 'title',
         message: 'What is the title of your project?',
+        validate: titleInput => {
+            if (titleInput) {
+                return true;
+            } else {
+                console.log('Please enter a title!');
+                return false;
+            }
+        }
     },
     {
         type: 'input',
         name: 'description',
-        message: 'What does your project do?',
+        message: 'Explain what your project does.',
     },
     {
         type: 'input',
         name: 'install',
-        message: 'How is your project installed?',
+        message: 'How do I install your project!',
     },
     {
         type: 'input',
         name: 'usage',
-        message: 'How is your project used?',
+        message: 'In what ways is your project used?',
     },
     {
         type: "list",
         message: "What license does your project use?",
         name: "license",
-        choices: ["mit", "agpl", "mpl", "apache"],
+        choices: ["mit", "agpl-3.0", "mpl-2.0", "apache-2.0",],
     },
     {
         type: 'input',
         name: 'contribute',
-        message: 'List GitHub usernames of anyone who contributed to this project, press ENTER if none',
+        message: 'List GitHub usernames of anyone who contributed to this project?',
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'How would I test your application?'
     },
     {
         type: 'input',
@@ -56,7 +69,7 @@ function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, err => {
         if (err) throw err;
 
-        console.log('Your ReadMe is complete!')
+        console.log('Your ReadMe is complete, please view it under ReadMeGnrt!')
     })
 }
 

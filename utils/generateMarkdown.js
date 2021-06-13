@@ -2,16 +2,17 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if (!license) {
-    license = [];
+    license = '';
   }
-  return `![badmath](https://img.shields.io/badge/license-${license}-green)`
+  return `![badmath](https://img.shields.io/static/v1?label=license&message=${license}&color=green)`
+  
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (!license) {
-    license = [];
+    license = '';
   }
   return `https://choosealicense.com/licenses/${license}`
 }
@@ -20,9 +21,9 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (!license) {
-    license = [];
+    license = '';
   }
-  return `# License 
+  return `
   ${renderLicenseLink(license)}
   `
 }
@@ -32,40 +33,49 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
+  
+  ## Description
+
+  ${data.description}
 
   ## Table of Contents
-  * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   * [License](#license)
   * [Contributing](#contributing)
+  * [Tests](#test)
   * [Questions](#questions)
   
-  #Description
 
-  ${data.description}
-
-  #Installation
+  ## Installation
 
   ${data.install}
 
-  #Usage
+  ## Usage
 
   ${data.usage}
 
-  #License
+  ## License
 
   ${renderLicenseSection(data.license)}
   
-  #Contributing
-
+  ## Contributing
+  
   ${data.contribute}
 
-  #Questions
+  ## Tests
+
+  ${data.test}
+
+  ## Questions
   
-  ${data.username}
+  Hi my name is ${data.username} the developer behind ${data.title} !
+  
+  If you have any questions about the usage of this project of any suggestions on how to better this project please feel free to contact me at:
+
   ${data.email}
 `;
 }
+
 
 module.exports = generateMarkdown;
