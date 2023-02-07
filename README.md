@@ -38,7 +38,7 @@
 
   ## Usage
 
-  Please see attached [video](https://drive.google.com/file/d/1Fv-lGNdSbHE0dNN7updu5BMTd4Mqahnl/view?usp=sharing) on how to use this application!
+  Please see attached [video](https://drive.google.com/file/d/12n57CULU_-4zRMGjopsoyj6mc26hmWZS/view?usp=sharing) on how to use this application!
 
   ![alt](./images/vid.gif)
 
